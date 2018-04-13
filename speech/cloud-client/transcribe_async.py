@@ -49,7 +49,7 @@ def transcribe_file(speech_file):
     # [END migration_async_request]
 
     print('Waiting for operation to complete...')
-    response = operation.result(timeout=90)
+    response = operation.result(timeout=600)
 
     # Each result is for a consecutive portion of the audio. Iterate through
     # them to get the transcripts for the entire audio file.
